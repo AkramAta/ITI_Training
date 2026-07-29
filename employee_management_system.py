@@ -1,9 +1,15 @@
 class Employee:
 
+    employee_count = 0
+    employee_list = []
+
     def __init__(self, employee_id, name , age):
         self.employee_id = employee_id
         self.name = name
         self.age = age
+        Employee.employee_count += 1
+        Employee.employee_list.append(self)
+
 
 
     def display_employee_info(self):
@@ -65,9 +71,9 @@ employee2 = PartTimeEmployee(2, "Ahmad", 25, 20,   80)
 employee3 = Freelancer(3, "Ashraf", 28, 1000, 5)
 
 
-employee_list = [employee1, employee2, employee3]
 
-for employee in employee_list:
+
+for employee in Employee.employee_list:
     employee.display_employee_info()
     print(f"Salary: {employee.calculate_salary()}\n")
 
@@ -78,7 +84,7 @@ for employee in employee_list:
 total = 0
 highest_salary = 0
 highest_paid_employee = ""
-for employee in employee_list:
+for employee in Employee.employee_list:
     total = total + employee.calculate_salary()
     if employee.calculate_salary() > highest_salary:
         highest_salary = employee.calculate_salary()
@@ -90,7 +96,7 @@ for employee in employee_list:
 print("#############  Employees Report #############")
 
 
-print("Total Employees:", len(employee_list))
+print("Total Employees:", len(Employee.employee_list))
 
 
 
@@ -103,6 +109,10 @@ print("Highest paid employee: ", highest_paid_employee)
 
 
 employee4 = PartTimeEmployee(4, "Nada",2 ,15 , 80 )
+
+
+for employee in Employee.employee_list:
+        print("Employee Name:", employee.name)
 
 
 
