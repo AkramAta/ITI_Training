@@ -33,7 +33,7 @@ students, teachers, and librarians to manage books.
 3. Open the project folder.
 4. Run:
 
-python main.py
+python smart_library_system.py
 
 
 
