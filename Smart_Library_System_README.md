@@ -43,24 +43,24 @@ python main.py
 
 ### Student Login
 
-![Student Login](screenshots/student-login.png)
+![Student Login](smart_library_system_screenshots/student_login.png)
 
 ### Student Borrows a Book
 
-![Student Borrows a Book](screenshots/student-borrows-book.png)
+![Student Borrows a Book](smart_library_system_screenshots/student_borrows_book.png)
 
 ### Return a Book
 
-![Return a Book](screenshots/return-book.png)
+![Return a Book](smart_library_system_screenshots/return_book.png)
 
 ### Teacher Login
 
-![Teacher Login](screenshots/teacher-login.png)
+![Teacher Login](smart_library_system_screenshots/teacher_login.png)
 
 ### Librarian Add a Book
 
-![Librarian Add a Book](screenshots/librarian-add-book.png)
+![Librarian Add a Book](smart_library_system_screenshots/librarian_add_book.png)
 
 ### Librarian View All Books
 
-![Librarian View All Books](screenshots/librarian-view-all-books.png)
+![Librarian View All Books](smart_library_system_screenshots/librarian_view_all_books.png)
